@@ -288,8 +288,16 @@ footer .footer-container {
 }
 
 @media screen and (max-width: 576px) {
+    nav {
+        gap: 20px;
+    }
+
+    nav .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .container {
-        width: 95%;   
+        width: 95%;
     }
 
     .section-heading {
@@ -306,16 +314,34 @@ footer .footer-container {
     #about .about-container .about-info {
         gap: 40px;
     }
-    
+
     #about .about-container {
         padding: 20px;
     }
-    
-    .skill-box, #about .about-container .about-info {
+
+    .skill-box,
+    #about .about-container .about-info,
+    .footer-container, 
+    #resume .resume-container, 
+    nav {
         flex-direction: column;
     }
 
     .skill-card {
         max-width: 100%;
     }
+
+    .footer-container form input[type="text"],
+    .footer-container form textarea {
+        width: 100%;
+    }
+    
+    .resume-container {
+        margin-top: 60px;
+    }
+
+    .resume-card {
+        margin-right: 10px;
+    }
+
 }
