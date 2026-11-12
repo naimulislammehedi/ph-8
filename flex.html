@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+
+    <style>
+        .container {
+            display: flex;
+            gap: 30px ;
+        }
+
+        .box {
+            background-color: teal;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .box-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .items {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .items {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Let's Explore Flex</h2>
+
+    <div class="container">
+        <div class="box">
+            <h3>box-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit, cumque, aperiam minus modi odit deserunt adipisci nesciunt ab quidem odio accusamus ea repellat illum repellendus molestiae voluptatibus culpa vero obcaecati consequuntur sed nisi quisquam sunt tenetur! Esse explicabo, iusto fuga magnam repellendus, soluta optio impedit alias unde excepturi corrupti, natus obcaecati mollitia ullam dicta quas aliquam fugiat enim distinctio!</p>
+        </div>
+        <div class="box">
+            <h3>box-2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit, cumque, aperiam minus modi odit deserunt adipisci nesciunt ab quidem odio accusamus ea repellat illum repellendus molestiae voluptatibus culpa vero obcaecati consequuntur sed nisi quisquam sunt tenetur! Esse explicabo, iusto fuga magnam repellendus, soluta optio impedit alias unde excepturi corrupti, natus obcaecati mollitia ullam dicta quas aliquam fugiat enim distinctio!</p>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="items">box - 1</div>
+        <div class="items">box - 2</div>
+        <div class="items">box - 3</div>
+        <div class="items">box - 4</div>
+        <div class="items">box - 5</div>
+        <div class="items">box - 6</div>
+        <div class="items">box - 7</div>
+        <div class="items">box - 8</div>
+        <div class="items">box - 9</div>
+        <div class="items">box - 10</div>
+        <div class="items">box - 11</div>
+        <div class="items">box - 12</div>
+        <div class="items">box - 13</div>
+        <div class="items">box - 14</div>
+        <div class="items">box - 15</div>
+        <div class="items">box - 16</div>
+        <div class="items">box - 17</div>
+        <div class="items">box - 18</div>
+        <div class="items">box - 19</div>
+        <div class="items">box - 20</div>
+    </div>
+</body>
+</html>
