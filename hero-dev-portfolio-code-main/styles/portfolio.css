@@ -293,3 +293,41 @@ footer .footer-container {
     display: none !important;
 }
 
+@media screen and (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+
+    #about,
+    #skills,
+    #resume {
+        padding-top: 60x;
+    }
+
+    #about .about-container {
+        padding: 20px; 
+    }
+
+    #about .about-container .about-info {
+        gap: 40px;
+    }
+    
+    #about .about-container .about-info {
+        flex-direction: column;
+    }
+
+    .section-heading h2 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    #skills .skills-container .skill-box {
+        flex-direction: column;
+    }
+
+    .skill-box .skill-card {
+        max-width: 100%;
+    }
+
+
+}
