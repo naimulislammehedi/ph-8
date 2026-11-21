@@ -303,6 +303,12 @@ footer .footer-container {
         justify-content: center;
     }
 
+    header {
+    background: url(../images/header_bg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
     .container {
         width: 95%;
     }
@@ -330,7 +336,10 @@ footer .footer-container {
         margin-bottom: 30px;
     }
 
-    #skills .skills-container .skill-box, .resume-container, nav {
+    #skills .skills-container .skill-box,
+    .resume-container,
+    nav,
+    #banner {
         flex-direction: column;
     }
 
@@ -360,6 +369,30 @@ footer .footer-container {
 
     .resume-card {
         margin-right: 10px;
+    }
+
+    #banner {
+        margin: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #banner .banner-image img {
+        width: 100%;
+    }
+
+    #banner .banner-content h1 {
+        font-size: 40px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .btn-group {
+        justify-content: center;
     }
 
 }
